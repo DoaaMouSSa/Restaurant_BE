@@ -39,7 +39,7 @@ namespace Restaurant.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("tblCategory");
+                    b.ToTable("tblCategory", (string)null);
                 });
 
             modelBuilder.Entity("Restaurant.Data.Entities.Item", b =>
@@ -68,7 +68,7 @@ namespace Restaurant.Infrastructure.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("tblItem");
+                    b.ToTable("tblItem", (string)null);
                 });
 
             modelBuilder.Entity("Restaurant.Data.Entities.Item", b =>
